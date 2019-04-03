@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>ContactBook</title>
+	<link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>    
+	<div class="head">
+        <h1>WebContactBook</h1>
+    </div>
+	<div id = "list">
+		<ul class = "navig-list">
+			<li id = "js-add-new">Add New Contact</li>
+			<li id = "js-search">Search Contact</li>
+			<li id="js-delete">Delete Contact</li>
+			<li id="js-show-all">Show all Contacts</li>
+		</ul>
+	</div>
+	
+	<div id = "search-panel" class = "panel">
+		<h1>Search Contact</h1>
+		<form id = "search" action="#">
+			<div id="results"></div>
+		
+			<div>
+				<label>
+					<input type = "text" id = "search" placeholder="Enter Name of Contact" />
+				</label>
+			</div>
+		
+			<input type="submit" value="Submit" />
+		</form>
+	</div>	
+	
+	<div id = "contact-panel" class = "panel">
+		<form id = "contact" action="#">
+		<h1>Add New Contact</h1>
+			<div>
+				<label>
+					<input type = "text" name = "person" id = "name" placeholder = "Imho">
+				</label>
+				<label>
+					<input type = "text" name = "phone" id = "name" placeholder = "0666666666">
+				</label>			
+			</div>
+			<div>
+				<input type="submit" value="Submit" />
+			</div>
+		</form>	
+	</div>
+	
+	<div id = "show-panel" class="panel">
+	
+	</div>
+	
+	<div id = "delete-panel" class = "panel">
+		<h1>Delete Contact</h1>
+		<form id = "delete" action = "#">
+			<div id ="delete"> </div> 
+			<div>
+				<label>
+					<input type = "text" name = "delete" id = "delete" placeholder = "Enter Name of the Contact Book to Delete">
+				</label>
+			</div>
+				<input type="submit" value="Submit" />			
+		</form>
+	</div>
+	
+	<script  src="js/index.js"></script>
+	
+</body>
+</html>
